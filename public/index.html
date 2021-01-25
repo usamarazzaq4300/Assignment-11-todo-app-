@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <form action="">
+            <tr>
+                <td class="A">Add Title<sup class="sterik">*</sup></td>
+                <td><input type="text" id="tit" placeholder="Add Title" class="forms"></td>
+            </tr>
+            <tr>
+                <td class="A">Priority<sup class="sterik">*</sup></td>
+                <td><input type="text" id="pri" placeholder="Set Priority" class="forms"></td>
+            </tr>
+            <tr>
+                <td class="A">Description</td>
+                <td><textarea id="Des" cols="20" rows="6" placeholder="Add Short Description"
+                        style="font-size: 17px;"></textarea></td>
+            </tr>
+        </form>
+    </table>
+
+    <button id="button" onclick="createTable()">Add</button>
+    <h2 style="font-family: Arial, Helvetica, sans-serif">Tasks</h2>
+    <table id="work" style="width: 60%;">
+        <tr id="headerRow">
+            <td width=16% style="text-align: left;">Title</td>
+            <td width=12% style="text-align: left;">Priority</td>
+            <td width=22% style="text-align: left;">Description</td>
+            <td width=10% style="text-align: center;">Due</td>
+        </tr>
+    </table>
+    <script src="./java.js"></script>
+</body>
+
+</html>
